@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шапка страницы</title>
+    <style>
+        body {
+            font-family: 'Uniform Sans', sans-serif;
+            font-size: medium;
+            background-color: rgb(209, 206, 206);
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 10px;
+        }
+        
+        .main-area {
+            flex: 1;
+            background-color: rgba(250, 247, 192, 0.792);
+            margin-right: 0px;
+            padding: 30px;
+            min-width: 150px;
+            text-align: center; 
+        }
+
+        .square {
+            background-color: #e3e08d;
+            justify-content: center;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .wide {
+        flex: 2;
+        min-width: 200px;
+        }
+
+        .inner-flex {
+            justify-content: center;
+            display: flex;
+            margin-bottom: 9px;
+            
+        }
+        .sidebar {
+            text-align: center;
+            width: 350px;
+            background-color: rgb(206, 242, 206);
+            padding: 10px;
+
+        }
+        .flex-container-2 {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .flex-element {
+            flex: 1;
+            background-color: #ffffff;
+            margin: 5px;
+            min-width: 120px;
+            text-align: center;
+            padding: 25px; 
+        }  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>[Шапка страницы]</h1>
+    </header>
+            <main class="flex-container">
+            <div class="main-area">
+            <h2>[Основная часть]</h2>
+            <div class="inner-flex">
+            <div class="square wide">[Еще 1]</div>
+                <div class="square wide">[Еще 2]</div>
+            </div>
+                <div class="square">[Еще 3]</div>
+            </div>
+
+        <div class="sidebar">
+        <h3>[Боковая область]</h3>
+        </div>
+        </main>
+    
+        <footer>
+        <div class="flex-container-2">
+            <div class="flex-element">
+                <h4>[Секция футера 1]</h4>
+            </div>
+            <div class="flex-element">
+                <h4>[Секция футера 2]</h4>
+            </div>
+            <div class="flex-element">
+                <h4>[Секция футера 3]</h4>
+            </div>
+            <div class="flex-element">
+                <h4>[Секция футера 4]</h4>
+            </div>
+            </div>
+</footer>
+</body>
+</html>

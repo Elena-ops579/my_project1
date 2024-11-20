@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей волшебства</title>
+
+    <style>
+        body {
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            margin: 0; 
+            padding: 0; 
+            background: linear-gradient(to right, #f3c4c4, #f3e0c4)
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: gray;
+            border-radius: 5px;
+            background: linear-gradient(to left, #bbbbbb, #a2a2a2)
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-radius: 5px;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            flex: 1 1 auto; 
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .flex-container {
+            margin: 60px auto; 
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .image {
+            max-width: 300px; 
+            transition: opacity 0.3;
+            border-radius: 10px;
+        }
+
+        .image-container:hover .image {
+            transform: scale(1.1); 
+            opacity: 0.7;  
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            margin-top: 20px; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <a href="#about">О музее</a>
+            <a href="#schedule">Расписание выставок</a>
+            <a href="#card">Пушкинская карта</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </div>
+    <h1>Галерея волшебных предметов</h1>
+    <div class="flex-container">
+        <div class="image-container">
+            <img src="./assets/images/e457d76885b2d78422dc4048b86105c0.jpg" alt="Ступа" class="image">
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/0e25b93ce135b71518bd25d15253c430.jpg" alt="Клубок" class="image">
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/243531d9bfd6475a946057b25630d811.jpg" alt="Лампа" class="image">
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/e6fed9b510709eaf3570b035ce6a0731.jpg" alt="Ковер-самолет" class="image">
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/b27f2db22020e2add28ec3689be39dd0.jpg" alt="Палочка" class="image">
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/da6f0f00ac1191bfc3483599c2df21be.jpg" alt="Свеча" class="image">
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/671e7b8188f3f3ab205036e8ebba3949.jpg" alt="Шар" class="image">
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/77a15dfd1e3a63aec2089026ca97cbc5.jpg" alt="Зелье" class="image">
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/fdbed0da7c9bcde2f38edc18f71018ee.jpg" alt="Тыква" class="image">
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/a13cff3c616147761cc4d8acb163122e.jpg" alt="Посох" class="image">
+        </div>
+    </div>
+</body>
+</html>
